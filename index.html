@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./imgs/icon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="main-container">
+        <header>
+            <div class="first">
+                <a href="./index.html">Simple Quiz App</a>
+            </div>
+            <div class="center">
+                <h2>Html/Css Quiz</h2>
+            </div>
+            <div class="end">
+                <a href="./index.html">Home</a>
+                <a href="./index.html">Html</a>
+                <a href="./index.html">Css</a>
+            </div>
+        </header>
+        <section>
+            <div class="title">
+                <h1>Student Info</h1>
+                <div class="line"></div>
+            </div>
+            <form action="results.html" method="post" id="quiz-form">
+                <div class="content-one">
+                    <label>Name:</label>
+                    <input type="text" id="name">
+                    <label>Email:</label>
+                    <input type="email" id="email">
+                    <label>D.O.B:</label>
+                    <input type="date" id="dob">
+                </div>
+                <div class="title">
+                    <h1>HTML</h1>
+                    <div class="line"></div>
+                </div>
+                <div class="content-two">
+                    <h4>Question #1</h4>
+                    <p>The legend element represents a caption for the content of its parent fieldset element.</p>
+                    <input type="radio" name="answer1" value="true"><label>True</label><br>
+                    <input type="radio" name="answer1" value="false"><label>False</label>
+                </div>
+                <div class="content-three">
+                    <h4>Question #2</h4>
+                    <p>A label element nesting an input element is required to have a for attribute with the same value as the input's id.</p>
+                    <input type="radio" name="answer2" value="true"><label>True</label><br>
+                    <input type="radio" name="answer2" value="false"><label>False</label>
+                </div>
+
+                <div class="title">
+                    <h1>CSS</h1>
+                    <div class="line"></div>
+                </div>
+
+                <div class="content-two">
+                    <h4>Question #1</h4>
+                    <p>In CSS, the font-size property can only be specified in pixels.</p>
+                    <input type="radio" name="answer3" value="true"><label>True</label><br>
+                    <input type="radio" name="answer3" value="false"><label>False</label>
+                </div>
+
+                <div class="content-three">
+                    <h4>Question #2</h4>
+                    <p>The CSS property border-radius is used to control the roundness of the corners of an element.</p>
+                    <input type="radio" name="answer4" value="true"><label>True</label><br>
+                    <input type="radio" name="answer4" value="false"><label>False</label>
+                </div>
+
+                <div class="button">
+                    <button type="submit" id="submit-button">Submit</button>
+                </div>
+
+            </form>
+
+        </section>
+
+        <footer>
+            <p>&copy;Simple-Quiz-App - 2023</p>
+        </footer>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>

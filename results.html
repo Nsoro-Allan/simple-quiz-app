@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./imgs/icon.ico" type="image/x-icon">
+</head>
+<body>
+    
+    <div class="main-container">
+
+        <header>
+            <div class="first">
+                <a href="./index.html">Simple Quiz App</a>
+            </div>
+            <div class="center">
+                <h2>Html/Css Quiz</h2>
+            </div>
+            <div class="end">
+                <a href="./index.html">Home</a>
+                <a href="./index.html">Html</a>
+                <a href="./index.html">Css</a>
+            </div>
+        </header>
+        
+        <section>
+
+        <div class="title">
+            <h1>Student Results</h1>
+            <div class="line"></div>
+        </div>
+
+        <div class="results">
+            <h1>Quiz Results</h1>
+            <div class="line"></div>
+        </div>
+            <div id="results-content">
+                <!-- Display results here using JavaScript -->
+            </div>
+
+            <div class="retake">
+                <a href="./index.html">Retake Quiz</a>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy;Simple-Quiz-App - 2023</p>
+        </footer>
+    </div>
+
+    <script>
+        // Retrieve and display the stored form data and results
+        const resultsContent = document.getElementById('results-content');
+        resultsContent.innerHTML = `
+            <p class="result-info">Student Information:</p>
+            <p><span>Name:</span> ${localStorage.getItem('name')}</p>
+            <p><span>Email:</span> ${localStorage.getItem('email')}</p>
+            <p><span>D.O.B:</span> ${localStorage.getItem('dob')}</p>
+            <p class="result-info">HTML Questions</p>
+            <p><span>Answer 1:</span> ${localStorage.getItem('answer1')}</p>
+            <p><span>Answer 2:</span> ${localStorage.getItem('answer2')}</p>
+            <p class="result-info">CSS Questions</p>
+            <p><span>Answer 1:</span> ${localStorage.getItem('answer3')}</p>
+            <p><span>Answer 2:</span> ${localStorage.getItem('answer4')}</p>
+
+        `;
+    </script>
+</body>
+</html>

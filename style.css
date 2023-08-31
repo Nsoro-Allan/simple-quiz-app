@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    background: black;
+    padding: 15px;
+    /* position: fixed; */
+    width: 100%;
+    align-items: center;
+}
+
+.first{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.first a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.center{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-left: 400px;
+}
+
+.center h2{
+    color: yellow;
+    font-size: 1.3rem;
+}
+
+.end{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-left: 400px;
+}
+
+.end a{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20%;
+}
+
+
+section{
+    padding: 25px;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+
+}
+
+.title h1{
+    font-size: 1.8rem;
+}
+
+.line{
+    padding: 2px;
+    width: 100%;
+    background: lightgrey;
+    margin-top: 5px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.content-one{
+    display: flex;
+    flex-direction: column;
+}
+
+.content-one label{
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.content-one input{
+    padding: 10px;
+    border-radius: 50px;
+    border: 1px solid black;
+    margin-top: 10px;
+    width: 30%;
+}
+
+.content-two{
+    margin-top: 20px;
+}
+
+.content-two h4{
+    font-size: 1.1rem;
+}
+
+.content-two p{
+    margin-top: 5px;
+}
+
+.content-two input{
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+.content-two label{
+    margin-left: 5px;
+    font-size: 0.9rem;
+}
+
+.content-three{
+    margin-top: 20px;
+}
+
+.content-three h4{
+    font-size: 1.1rem;
+}
+
+.content-three p{
+    margin-top: 5px;
+}
+
+.content-three input{
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+.content-three label{
+    margin-left: 5px;
+    font-size: 0.9rem;
+}
+
+.content-four{
+    margin-top: 20px;
+}
+
+.content-four p{
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.content-four select{
+    padding: 11px;
+    border-radius: 4px;
+    width: 30%;
+    margin-top: 10px;
+}
+
+.content-four textarea{
+    margin-top: 10px;
+    width: 30%;
+    height: 100px;
+    padding: 10px;
+}
+
+.button{
+    margin-top: 20px;
+}
+
+.button button{
+    padding: 10px;
+    background: black;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    width: 30%;
+    border: 2px solid black;
+    transition: all ease-in-out 1s;
+}
+
+.button button:hover{
+    background: transparent;
+    color: black;
+    transition: all ease-in-out 1s;
+    cursor: pointer;
+}
+
+footer{
+    background: black;
+    color: #fff;
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+
+#results-content{
+    padding: 15px;
+    background: black;
+    color: #fff;
+    border-radius: 10px;
+    line-height: 35px;
+    margin-top: 5px;
+    width: 50%;
+}
+
+.results{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.results h1{
+    font-size: 1.7rem;
+}
+
+.results .line{
+    padding: 3px;
+    width: 5%;
+    margin-left: 30px;
+    background: black;
+    border-radius: 20px;
+}
+
+span{
+    text-decoration: underline;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.retake{
+    margin-top: 30px;
+}
+
+.retake a{
+    text-decoration: none;
+    background: black;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.result-info{
+    font-weight: bold;
+    font-size: 1.5rem;
+    background: #fff;
+    color: black;
+    border-radius: 4px;
+    padding: 5px;
+}
